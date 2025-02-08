@@ -31,6 +31,13 @@ func main() {
 
 	err = v.Struct(aa)
 	fmt.Println(err)
+
+	aa = AA{
+		Status: "no",
+	}
+
+	err = v.Struct(aa)
+	fmt.Println(err)
 }
 
 func validateStruct(sl validator.StructLevel) {
